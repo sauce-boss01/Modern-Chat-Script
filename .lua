@@ -10,4 +10,7 @@ if isModern then
     local channel = ChatService.TextChannels["RBXGeneral"]
 
         channel:SendAsync(getgenv().Message)
-    end
+else
+local args = {[1] = (Message), [2] = "All"}
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+end
