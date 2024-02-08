@@ -1,6 +1,6 @@
 --this is used for a loadstring so theres not the first part so it wont work, you can make it work by adding this in the first line: getgenv().Message = "your message here" --put ur message here
 
-local Framework = loadstring(game:HttpGet("https://shz.al/~Framework", true))()
+local Framework = loadstring(game:HttpGet("https://shz.al/~Framework", true))() --credits to synergy
 local services = Framework.Services
 
 local ChatService = services.TextChatService
